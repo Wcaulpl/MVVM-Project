@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0310512821EDE0C900074800 /* DYLeftSlipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0310512621EDE0C900074800 /* DYLeftSlipManager.m */; };
 		034E2E7721EC20FE00402B86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 034E2E7621EC20FE00402B86 /* AppDelegate.m */; };
 		034E2E7A21EC20FE00402B86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034E2E7921EC20FE00402B86 /* ViewController.m */; };
 		034E2E7F21EC20FF00402B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034E2E7E21EC20FF00402B86 /* Assets.xcassets */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0310512621EDE0C900074800 /* DYLeftSlipManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYLeftSlipManager.m; sourceTree = "<group>"; };
+		0310512721EDE0C900074800 /* DYLeftSlipManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLeftSlipManager.h; sourceTree = "<group>"; };
 		034E2E7221EC20FE00402B86 /* XYBaseMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYBaseMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		034E2E7521EC20FE00402B86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		034E2E7621EC20FE00402B86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0310512521EDE0A500074800 /* LeftViewVc */ = {
+			isa = PBXGroup;
+			children = (
+				0310512721EDE0C900074800 /* DYLeftSlipManager.h */,
+				0310512621EDE0C900074800 /* DYLeftSlipManager.m */,
+			);
+			path = LeftViewVc;
+			sourceTree = "<group>";
+		};
 		034E2E6921EC20FE00402B86 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +185,7 @@
 				034E2EA221EC604B00402B86 /* XYBaseNavController.m */,
 				034E2EA421EC6B1E00402B86 /* XYBaseTabbarController.h */,
 				034E2EA521EC6B1F00402B86 /* XYBaseTabbarController.m */,
+				0310512521EDE0A500074800 /* LeftViewVc */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -443,6 +456,7 @@
 				034E2EAA21EC6D7D00402B86 /* XYTabBarViewModel.m in Sources */,
 				034E2EA021EC46B800402B86 /* UIViewController+XYBase.m in Sources */,
 				0362C91D21ED772E001A2E7D /* XYManager.m in Sources */,
+				0310512821EDE0C900074800 /* DYLeftSlipManager.m in Sources */,
 				034E2E9C21EC3A7700402B86 /* SVProgressHUD+XYHelper.m in Sources */,
 				0362C91221ED75E8001A2E7D /* XYView.m in Sources */,
 				0362C91621ED7605001A2E7D /* XYViewModel.m in Sources */,

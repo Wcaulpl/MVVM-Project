@@ -12,6 +12,7 @@
 
 #import "XYBaseNavController.h"
 #import "ViewController.h"
+#import "DYLeftSlipManager.h"
 
 @interface XYBaseTabbarController () <UITabBarControllerDelegate>
 
@@ -28,6 +29,8 @@
     self.delegate = self;
     [self.tabBar setBackgroundColor:[UIColor whiteColor]];
     self.tabBar.tintColor = RGB(249, 104, 62);
+    
+    [[DYLeftSlipManager sharedManager] setLeftViewController:[UIViewController new] coverViewController:self];
     
     [self.viewModel.loadCommand execute:nil];
 }

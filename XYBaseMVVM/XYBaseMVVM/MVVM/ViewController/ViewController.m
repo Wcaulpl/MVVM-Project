@@ -18,9 +18,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = RGB((arc4random()%255), (arc4random()%255), (arc4random()%255));
+    UIButton *btn = [UIButton buttonWithType:(UIButtonTypeSystem)];
+    [btn setTitle:@"pushViewController" forState:(UIControlStateNormal)];
+    [btn addTarget:self action:@selector(pushViewController) forControlEvents:(UIControlEventTouchUpInside)];
+    btn.frame = CGRectMake(100, 100, 200, 50);
+    [self.view addSubview:btn];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+- (void)pushViewController {
     if (self.navigationController.childViewControllers.count == 4) {
         NSMutableArray *array = self.navigationController.childViewControllers.mutableCopy;
         [array removeLastObject];
